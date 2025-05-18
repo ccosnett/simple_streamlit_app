@@ -1,0 +1,7 @@
+main.py
+pyproject.toml
+simple_streamlit_app.egg-info/PKG-INFO
+simple_streamlit_app.egg-info/SOURCES.txt
+simple_streamlit_app.egg-info/dependency_links.txt
+simple_streamlit_app.egg-info/requires.txt
+simple_streamlit_app.egg-info/top_level.txt

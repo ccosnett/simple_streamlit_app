@@ -1,0 +1,22 @@
+# .pre-commit-config.yaml
+repos:
+  - repo: local
+    hooks:
+      - id: run-make-format
+        name: Run Makefile format target
+        entry: make format
+        language: system
+        always_run: true  # Optional: run on every commit regardless of what changed
+        pass_filenames: false  # Important: avoids passing file args to `make`
+      - id: pyright-type-check
+        name: Run Makefile type-check target
+        entry: make type-check         # invokes the Makefile target
+        language: system
+        always_run: true                      # run on every commit
+        pass_filenames: false                 # don't append file paths to make
+
+     # - id: no-prints in Python
+     #   name: No print statements
+     #   entry: bash -c "git diff --cached | grep -E 'print\(' **/*.py && exit 1 || exit 0"
+     #   language: system
+     #   types: [python]
