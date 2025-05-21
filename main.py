@@ -12,7 +12,7 @@ load_dotenv()
 
 st.title("Live Monitoring of Aave Position")
 
-rpc_url = os.environ["ARBITRUM_MAINNET_RPC_URL"]
+rpc_url = 'https://arbitrum-mainnet.infura.io/v3/2eeb46b35a824a21abbe1ba4b0f27a12' #os.environ["ARBITRUM_MAINNET_RPC_URL"]
 api_key = os.environ["COMPASS_API_KEY"]
 w3 = Web3(Web3.HTTPProvider(rpc_url))
 
